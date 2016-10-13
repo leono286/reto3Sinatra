@@ -1,5 +1,9 @@
 require "sinatra"
 
-get '/makers/:nombre' do
-		"<h1>Hola #{params[:nombre].capitalize}!</h1>"
+get '/' do
+	erb :index
+end
+
+post '/new' do
+	"¡Hola #{params[:name]}!."
 end
